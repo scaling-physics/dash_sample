@@ -67,7 +67,8 @@ def update_graph(option_slctd):
     #     template='plotly_dark'
     # )
     
-    fig = px.bar(data_frame=dff, x='State', y='Pct of Colonies Impacted', title="Bee colonies impacted by state")
+    # fig = px.bar(data_frame=dff, x='State', y='Pct of Colonies Impacted', title="Bee colonies impacted by state")
+    fig = px.line(data_frame=dff, x='Year', y='Pct of Colonies Impacted', title="Bee colonies impacted by state")
 
     # Plotly Graph Objects (GO)
     # fig = go.Figure(
